@@ -1,3 +1,7 @@
+![CI](https://github.com/brunoslalmeida/nodejs-docker/workflows/CI/badge.svg)
+[![DockerPulls](https://img.shields.io/docker/pulls/aquelatecnologia/host-nodejs.svg)](https://registry.hub.docker.com/u/aquelatecnologia/host-nodejs/)
+[![DockerStars](https://img.shields.io/docker/stars/aquelatecnologia/host-nodejs.svg)](https://registry.hub.docker.com/u/aquelatecnologia/host-nodejs/)
+
 # Usage
 
 To use this docker container you should this execute this command:
