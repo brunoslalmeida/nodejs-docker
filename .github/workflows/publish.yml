@@ -23,14 +23,14 @@ jobs:
       id: build 
       uses: docker/build-action@v1
       with:
-        repository: ${{ DOCKER_REPOSITORY }}
+        repository: ${{ secrete.DOCKER_REPOSITORY }}
         tags: v1
     - name: login
       uses: docker/login-action@v1
       with:
-        username: ${{ DOCKER_USERNAME }}
-        password: ${{ DOCKER_PASSWORD }}
+        username: ${{ secrete.DOCKER_USERNAME }}
+        password: ${{ secrete.DOCKER_PASSWORD }}
     - name: push
       uses: docker/push-action@v1
       with:
-        tags: ${{ outputs.build.tags }}
+        tags: latest
