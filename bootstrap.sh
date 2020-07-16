@@ -1,4 +1,5 @@
 #!/bin/bash
+set -e
 
 PROJECT_SRC=${APP_PATH:-"/var/app/src"}
 PROJECT_SCR=${SCRIPT_PATH:-"/var/app/scripts"}
