@@ -12,7 +12,7 @@ then
   exit 1;
 fi
 
-if [ ! -d "$PROJECT_SRC" || -z "$(ls -A -- ${PROJECT_SRC})" ]; then
+if [ ! -d "$PROJECT_SRC" ] || [ -z "$(ls -A -- ${PROJECT_SRC})" ]; then
   echo "Creating app folder at ${PROJECT_SRC}..."
   mkdir -p $PROJECT_SRC
 
