@@ -26,7 +26,7 @@ else
   git checkout .
 
   echo "Doing checkout to ${PROJECT_BRANCH}"
-  git checkout --track origin/$PROJECT_BRANCH
+  git checkout $PROJECT_BRANCH
 
   echo "Updating branch"
   git pull origin $PROJECT_BRANCH
