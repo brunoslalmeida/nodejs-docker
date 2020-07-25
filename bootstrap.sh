@@ -53,5 +53,17 @@ else
   npm install  
 fi
 
+if [ ! -z "$SEQUELIZE_CONFIG" ]; then
+  echo '{' > config/config.json
+  echo '  "'$SEQUELIZE_ENV'": {' >> config/config.json
+  echo '  "username": "'$SEQUELIZE_USER'",' >> config/config.json
+  echo '  "password": "'$SEQUELIZE_PASS'",' >> config/config.json
+  echo '  "database": "'$SEQUELIZE_DB'",' >> config/config.json
+  echo '  "host": "'$SEQUELIZE_HOST'",' >> config/config.json
+  echo '  "dialect": "'$SEQUELIZE_DIALECT'"' >> config/config.json
+  echo '  }' >> config/config.json
+  echo '}' >> config/config.json
+fi
+
 echo "Starting App"
 npm start
